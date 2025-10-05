@@ -49,3 +49,67 @@ legend{
   margin: 10px;
   padding: 10px;
 }
+*{
+  margin: 0;
+  padding: 0;
+   justify-content: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease, transform 0.3s ease;
+}
+.container:hover {
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.4);
+    transform: scale(1.02);
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease, transform 0.3s ease;
+  }
+
+  /* ✅ Hover animation trigger */
+  .container:hover {
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.4);
+    transform: scale(1.02);
+  }
+
+  /* Optional: Smooth input focus glow */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  /* ✅ Input focus animation */
+  input:hover,
+  select:hover,
+  textarea:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+  }

@@ -113,3 +113,14 @@ legend{
     border-color: #007bff;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
   }
+  button {
+    background-color: #007bff;
+    color: rgb(48, 124, 246);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 2em;
+  }

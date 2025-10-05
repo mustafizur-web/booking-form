@@ -24,6 +24,92 @@
     Hotel Booking Form
   </h1>
   <h5>Book your stay at our luxurious hotel</h5>
+  <form>
+    <label for="name"><span class="allstar">*</span>Name:
+      <br>
+      <input class="left" type="text" placeholder="first name">
+      <input class="left" type="text" placeholder="last name">
+    </label>
+    <br> <br>
+    <label for="email"><span class="allstar">*</span>Email:
+      <br>
+      <input type="email" class="left" placeholder="your email">
+    </label>
+    <label for="phone number"><span class="allstar">*</span>Phone:
+      <input type="text" class="left" placeholder="your phone number">
+    </label>
+    <br> <br> 
+    <label for="room type"><span class="allstar">*</span>Room Type:
+      <br>
+      <select name="room type" id="room type" class="left">
+        <option value="please select">Please Select</option>
+        <option value="Standard Room">Standard Room(1 to 2 people)</option>
+        <option value="Family Room">Family Room(3 to 4 people)</option>
+        <option value="Private Room">Private Room(4 to 5 people)</option>
+        <option value="deluxe">Deluxe Room(1 people)</option>
+      </select>
+      <label for="number of guests"><span style="font-size: 0.5em;">Number of Guests:</span></label>
+      <input type="number" id="number of guests" class="left" min="1" max="5" placeholder="number of guests">
+    </label>
+    <br> <br>
+    <label for="arrival date and time"><span class="allstar">*</span>Arrival Date:
+      <input type="date" class="left">
+    </label>
+    <label for="Departure Date"><span class="allstar">*</span>Departure Date:
+      <input type="date" class="left">
+    </label>
+    <br>
+    <br>
+    <fieldset>
+      <legend><span class="allstar">*</span>Payment Information</legend>
+      <label for="Bkash">
+        <input type="radio" name="payment" id="Bkash">
+        Bkash
+      </label>
+      <br>
+      <label for="nagad">
+        <input type="radio" name="payment" id="Nagad">
+        Nagad
+      </label>
+      <br>
+      <label for="rocket">
+        <input type="radio" name="payment" id="rocket">
+        Rocket
+      </label>
+      <br>
+      <label for="upai">
+        <input type="radio" name="payment" id="upai">
+        Upai
+      </label>
+      <br>
+      <label for="credit card">
+        <input type="radio" name="payment" id="credit card">
+        Credit Card
+      </label>
+      <br>
+      <input type="submit" value="Gateway">
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Free Pickup Service</legend>
+      <label for="pickup">
+        <input type="radio" name="pickup" id="">
+        Yes Please! - Pick me up on arrival
+      </label>
+      <br>
+      <label for="no pickup">
+        <input type="radio" name="pickup" id="">
+        No Thanks! - I will arrange my own transport
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Special Requests</legend>
+      <textarea name="" id="" cols="100" rows="20"></textarea>
+    </fieldset>
+    <br>
+    <input class="rm" type="reset" value="Reset">
+    <input class="rm" type="submit" value="Submit">
+  </form>
   </main>
   <footer>
     <small>&copy; 2025 Hotel Booking. All rights reserved.</small>
